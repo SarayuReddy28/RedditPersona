@@ -1,3 +1,4 @@
+praw
 transformers
-beautifulsoup4
-requests
+torch
+python-dotenv
