@@ -1,15 +1,25 @@
-# RedditPersona
+# 🧠 Reddit Persona Generator
 
-# Reddit User Persona Generator
+This project builds a **user persona** by analyzing any Reddit user's recent posts and comments, using:
+- Reddit API (via PRAW)
+- A local Hugging Face language model (`google/flan-t5-small`)
 
-This Python script scrapes a Reddit user's posts and comments and uses a local language model to generate a detailed user persona.
+It:
+- Fetches posts & comments from a Reddit user profile
+- Summarizes them into a persona, with quotes from real content
+- Saves the result as a timestamped text file
 
-## 📦 Requirements
-- Python 3.8+
-- Packages: see `requirements.txt`
+---
 
-## ⚙️ Setup
-1. Clone this repository:
+## 🚀 Features
+- Runs locally (no paid API required)
+- Uses an open-source small model (`flan-t5-small`)
+- Works from notebook or script
+- Persona saved as `username_persona_YYYYMMDD_timestamp.txt`
+
+---
+
+## 📦 Installation
+Install dependencies:
 ```bash
-git clone https://github.com/SarayuReddy28/RedditPersona.git
-cd your-repo
+pip install -r requirements.txt
